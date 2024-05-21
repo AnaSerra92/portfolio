@@ -1,0 +1,393 @@
+:root{/*variáveis comuns*/
+    --bg-color: #212529;
+    --primary-color: #025a20;
+    --white-color: white;
+    --span-color: #d9a60d;
+    --black-color: black;
+
+}
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Poppins, sans-serif
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bg-color);
+    font-size: 1.2rem;
+    padding: 40px 50px;
+    color: var(--white-color);
+
+}
+header p{
+    font-size: 1.7rem;
+    color:#65686b;
+    text-decoration: none;
+}
+
+nav a{
+    color:#65686b ;
+    text-decoration: none;
+    margin-right: 15px;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: var(--span-color);
+    background-color:var(--bg-color);
+    
+}
+
+.inicio{
+    background-color: var(--bg-color);
+    padding: 40px 50px;
+    color: var(--white-color);
+}
+
+.inicio {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.inicio h1{
+    font-size: 2rem;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.texto-banner span{
+    color: var(--span-color);
+}
+    
+.texto-banner p{
+    width: 75%;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-weight: 200;
+    
+}
+
+.texto-banner a{
+    color:var(--white-color);
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color: var(--primary-color) ;
+    border-radius: 5px;
+    
+}
+
+.inicio img{
+    width: 40%;
+
+}
+.newsletter{
+    background-color: var(--primary-color);
+    padding: 50px;
+}
+.newsletter .container{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newsletter p{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+.newsletter form{
+    margin-right: 70px;
+}
+
+.newsletter form input[type=text]{
+    border-radius: 5px;
+    width: 500px;
+    padding: 15px;
+}
+.newsletter form input[type=submit]{
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color:var(--white-color);
+    font-size: 1.3rem;
+    
+}
+
+.cartoes {
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 30px;
+}
+
+.cartoes i{
+    font-size: 50px;
+    padding: 15px;
+}
+
+.virtual, .empessoa, .hibrido{
+    padding: 25px;
+    background-color:var(--bg-color) ;
+    color: var(--white-color);
+    border-radius: 5px;
+    
+}
+
+.hibrido{
+    background-color:#6c757d ; 
+}
+
+.hibrido a:hover{
+    background-color: #6c757d;
+    border-style: solid;
+    border-color: #65686b;
+}
+.virtual a, .empessoa a, .hibrido a{
+    color:var(--white-color);
+    font-size: 1.2rem;
+    padding: 15px;
+    background-color:var(--primary-color) ;
+    border-radius: 5px;
+}
+.hibrido a{
+    background-color: #3a4045;
+    
+}
+.texto-aprende{
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    gap: 60px;
+    text-align: justify;
+}
+.texto-aprende h1{
+    font-weight: 600;
+}
+
+.texto-aprende img{
+    width: 50%;
+}
+.texto-aprende span{
+    font-weight: 200;
+    font-size: 1.2rem; 
+}
+.aprende-info p{
+    margin-bottom: 15px;
+  
+}
+.aprende-info a{
+    background-color: #f7f9fa;
+    color:var(--black-color);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.aprende-info a:hover{
+    background-color: var(--white-color) ;
+    border-style:solid;
+    border-width:thin;
+    border-color: #65686b;
+}
+.react{
+    background-color: var(--bg-color);
+    padding: 50px;
+    
+}
+.react {
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--white-color);
+    text-align: left;
+    gap: 25px;
+}
+.react h1{
+    font-weight: 600;
+}
+.react img{
+    width: 50%;
+}
+
+.react p{
+    margin-bottom: 15px;
+}
+
+.react span{
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+.react a{
+    background-color: var(--white-color);
+    color: var(--black-color);
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.text-intr{
+    text-align: center;
+    background-color:var(--primary-color);
+    color: var(--white-color);
+    padding-top: 40px;
+
+}
+.text-intr h2{
+    font-weight: 600;
+}
+.text-intr p{
+    font-weight: lighter;
+}
+.instrutores{
+    background-color:var(--primary-color);
+    padding-top: 30px;
+    padding-bottom: 40px;
+   
+}
+.instrutores .container{
+    padding: 50px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 4%; 
+    background-color:var(--primary-color);
+}
+
+
+.instrutores img{
+    width: 70px;
+    border-radius: 50%;
+}
+.instrutores div{
+    padding: 25px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+}
+.instrutores h2{
+    padding: 8px;
+    font-weight: 500;
+}
+.instrutores a{
+    color: var(--black-color);
+    padding: 5px;
+}
+.instrutores a:hover{
+    background-color: var(--span-color);
+    color:var(--white-color);
+}
+.contactos{
+    padding: 50px 10%;
+}
+
+
+.contactos h2{
+    text-align: center;
+    font-weight: 600;
+}
+.contactos span{
+    font-weight: bolder;
+    line-height: 2.5;
+    
+}
+.contactos hr{
+    opacity: 15%;
+}
+footer{
+    padding: 50px 10%;
+    text-align: center;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    position: relative;
+}
+footer p{
+    font-weight: 200;
+}
+footer a{
+    position: absolute;
+    bottom: 25%;
+    right: 50px;
+    padding: 5px 10px;
+    color:var(--primary-color);
+    border-style: solid;
+    border-radius: 50%;
+   
+}
+
+/* PÁGINA CONTACTO */
+
+#bg-contacto{
+    background-color: var(--bg-color);
+
+}
+
+.container-form{
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: var(--white-color);
+    
+}
+.container-form h2{
+    text-align: center;
+    margin: 30px;
+
+}
+
+label{
+    display: block;
+    
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+textarea{
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 15px;
+}
+input[type="submit"]{
+    background-color:var(--primary-color);
+    color: var(--white-color);
+    padding: 13px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 25%;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.02);
+    transition: all 300ms ease-in;
+    
+}
+
+.sucesso{
+    text-align: center;
+}
